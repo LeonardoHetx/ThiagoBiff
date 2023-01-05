@@ -2,59 +2,59 @@
 
 window.addEventListener('DOMContentLoaded', function () {
 
-   $('.owl-one').owlCarousel({
-      autoplay: true,
-      autoplayHoverPause: true,
-      loop:true,
-      margin:10,
-      responsiveClass:true,
-      dots:false,
-      nav:true,
-      navText: ['<img src="assets/icons/homeleft.png" alt="">', '<img src="assets/icons/homeright.png" alt="">'],
-      responsive:{
-          0:{
-              items:1,
-              nav:true
-          },
-          600:{
-              items:1,
-              nav:true
-          },
-          1000:{
-              items:1,
-              nav:true,
-              loop:true
-          }
-      }
-  })
+//    $('.owl-one').owlCarousel({
+//       autoplay: true,
+//       autoplayHoverPause: true,
+//       loop:true,
+//       margin:10,
+//       responsiveClass:true,
+//       dots:false,
+//       nav:true,
+//       navText: ['<img src="assets/icons/homeleft.png" alt="">', '<img src="assets/icons/homeright.png" alt="">'],
+//       responsive:{
+//           0:{
+//               items:1,
+//               nav:true
+//           },
+//           600:{
+//               items:1,
+//               nav:true
+//           },
+//           1000:{
+//               items:1,
+//               nav:true,
+//               loop:true
+//           }
+//       }
+//   })
 
 //   this.document.getElementsByClassName('owl-next')[0].style.backgroundColor = "red"
 
-  $('.owl-two').owlCarousel({
-   autoplay: true,
-   autoplayHoverPause: true,
-   loop:true,
-   margin: 100,
-   responsiveClass:true,
-   dots:false,
-   nav:true,
-   navText: ['<img src="assets/icons/left.png" alt="">', '<img src="assets/icons/right.png" alt="">'],
-   responsive:{
-       0:{
-           items:1,
-           nav:true
-       },
-       600:{
-           items:1,
-           nav:true
-       },
-       1000:{
-           items:1,
-           nav:true,
-           loop:true
-       }
-   }
-})
+//   $('.owl-two').owlCarousel({
+//    autoplay: true,
+//    autoplayHoverPause: true,
+//    loop:true,
+//    margin: 100,
+//    responsiveClass:true,
+//    dots:false,
+//    nav:true,
+//    navText: ['<img src="assets/icons/left.png" alt="">', '<img src="assets/icons/right.png" alt="">'],
+//    responsive:{
+//        0:{
+//            items:1,
+//            nav:true
+//        },
+//        600:{
+//            items:1,
+//            nav:true
+//        },
+//        1000:{
+//            items:1,
+//            nav:true,
+//            loop:true
+//        }
+//    }
+// })
 
 //REMOVE INSTAGRAM WIDGET POP-UP
 function vermelho(){document.querySelector('a.eapps-link').style.opacity = "0";}
