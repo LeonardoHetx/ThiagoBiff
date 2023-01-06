@@ -378,7 +378,7 @@ body.menu-expanded button path {
   background-color: var(--brand-salmon);
   position: absolute;
   width: 8%;
-  height: max(42vw);
+  height: max(56vw);
   z-index: 2;
 }
 
@@ -490,7 +490,7 @@ body.menu-expanded button path {
 #about a::before {
   content: '';
   position: absolute;
-  bottom: 0.3rem;
+  bottom: 0.4rem;
   left: -0.5rem;
   width: 2rem;
   height: 2rem;
@@ -511,10 +511,14 @@ body.menu-expanded button path {
   box-shadow: -1px 10px 21px -8px #5b5b5b;
 } */
 
+#about .col-c{
+  position: relative;
+}
+
 #about .sqr {
   position: absolute;
   left: -4%;
-  top:103rem;
+  top: -100%;
   scale: 0.4;
 }
 
@@ -583,7 +587,7 @@ body.menu-expanded button path {
 #what .col{
   margin: auto;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 #what .descriptions {
@@ -747,7 +751,7 @@ section#feedback {
 
 #feedback .owl-prev,
 #feedback .owl-next {
-  top: -40%;
+  top: 33%;
   position: absolute;
   transform: scale(0.07);
   transition: transform 0.3s;
@@ -756,11 +760,11 @@ section#feedback {
 }
 
 #feedback .owl-prev {
-  left: -65%;
+  left: -75%;
 }
 
 #feedback .owl-next {
-  right: -65%;
+  right: -75%;
 }
 
 #feedback .owl-prev:hover,
@@ -1130,6 +1134,15 @@ footer .col-c {
     letter-spacing: 3px;
   }
 
+  .column-left,
+.column-right {
+  background-color: var(--brand-salmon);
+  position: absolute;
+  width: 8%;
+  height: max(42vw);
+  z-index: 2;
+}
+
   #home img {
     width: 100vw;
     height: max(42vw);
@@ -1213,12 +1226,19 @@ footer .col-c {
     position: relative;
   }
 
-  #about .col-c img {
+  #about .col-c img{
     z-index: 10;
     width: 70rem;
     position: absolute;
     right: 0;
     top: -15rem;
+  }
+
+  #about .col-c .sqr {
+    position: absolute;
+    left: -25%;
+    top: -38rem;
+    scale: 0.4;
   }
 
   /*==== WHAT ======================= */
@@ -1334,6 +1354,10 @@ footer .col-c {
 
   section#portfolio {
     padding-block: 22rem;
+  }
+
+  #portfolio{
+    height: 200%;
   }
 
   #portfolio .wrapper {
