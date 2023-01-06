@@ -350,7 +350,7 @@ body.menu-expanded button path {
 /*==== HOME ============================================ */
 
 #home {
-  padding-top: calc(4.1rem + var(--nav-height));
+  padding-top: var(--nav-height);
   background-color: var(--brand-salmon);
 }
 
@@ -359,7 +359,7 @@ body.menu-expanded button path {
 }
 
 #home p {
-  font-size: 1.8rem;
+  font-size: .8rem;
   line-height: 150%;
   color: var(--paragraph);
   margin-bottom: 3.2rem;
@@ -400,15 +400,15 @@ body.menu-expanded button path {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 23rem;
+  height: 8rem;
   z-index: 2;
 }
 
 #home .col-b .column-bottom p {
   text-transform: uppercase;
   text-align: right;
-  margin-right: 30rem;
-  line-height: 30rem;
+  margin-right: 10rem;
+  line-height: 9.3rem;
   position: relative;
   letter-spacing: 3px;
 }
@@ -417,10 +417,10 @@ body.menu-expanded button path {
   content: '';
   clip-path: polygon(100% 50%, 50% 100%, 100% 100%);
   position: absolute;
-  top: 7.7rem;
-  right: -5rem;
-  width: 10rem;
-  height: 10rem;
+  top: 2em;
+  right: -2rem;
+  width: 4rem;
+  height: 4rem;
   background-color: var(--secondary-color);
 }
 
@@ -449,8 +449,8 @@ body.menu-expanded button path {
 
 #home .owl-prev img,
 #home .owl-next img {
-  width: 9rem;
-  height: 9rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 /*==== ABOUT ============================================ */
@@ -514,7 +514,7 @@ body.menu-expanded button path {
 #about .sqr {
   position: absolute;
   left: -4%;
-  top: 60%;
+  top:103rem;
   scale: 0.4;
 }
 
@@ -840,7 +840,7 @@ footer .social-links {
 
 footer .col-b li,
 footer .col-b li a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -850,9 +850,9 @@ footer .col-b li a {
   text-decoration: none;
 }
 
-footer .col-b li:nth-child(4) {
+/* footer .col-b li:nth-child(4) {
   line-height: 2.5rem;
-}
+} */
 
 footer .col-b ul.icons {
   float: left;
@@ -864,12 +864,24 @@ footer .col-b ul.icons svg {
   width: 15px;
 }
 
+footer .col-b ul.icons li:nth-child(2) svg {
+  transform: translateY(-40%);
+}
+
+footer .col-b ul.icons li:nth-child(3) svg {
+  transform: translateY(-80%);
+}
+
+footer .col-b ul.icons li:nth-child(4) svg {
+  transform: translateY(-110%);
+}
+
 footer .col-b ul.icons svg path {
   fill: white;
 }
 
 footer .col-b li:nth-child(3) {
-  margin-bottom: 0;
+  margin-bottom: .5rem;
 }
 
 footer .col-c ul {
@@ -1100,6 +1112,24 @@ footer .col-c {
     font-size: 1.8rem;
   }
 
+  #home .col-b .column-bottom {
+    background: linear-gradient(transparent, var(--brand-light));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23rem;
+    z-index: 2;
+  }
+  
+  #home .col-b .column-bottom p {
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 30rem;
+    line-height: 30rem;
+    position: relative;
+    letter-spacing: 3px;
+  }
+
   #home img {
     width: 100vw;
     height: max(42vw);
@@ -1107,6 +1137,30 @@ footer .col-c {
     margin-inline: auto;
     object-position: initial;
   }
+
+  #home p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--paragraph);
+    margin-bottom: 3.2rem;
+  }
+
+  #home .owl-prev img,
+#home .owl-next img {
+  width: 9rem;
+  height: 9rem;
+}
+
+#home .col-b .column-bottom p::after {
+  content: '';
+  clip-path: polygon(100% 50%, 50% 100%, 100% 100%);
+  position: absolute;
+  top: 7.7rem;
+  right: -5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--secondary-color);
+}
 
   /*==== ABOUT ======================= */
 
@@ -1128,7 +1182,7 @@ footer .col-c {
     line-height: 130%;
     margin-bottom: 2.4rem;
     color: var(--secondary-color);
-    font-size: 5rem;
+    font-size: 11rem;
     font-family: 'NewYork', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
@@ -1477,6 +1531,31 @@ footer .col-c {
     align-self: center;
     justify-self: flex-end;
   }
+
+  footer .col-b li,
+footer .col-b li a {
+  font-size: 1.2rem;
+  position: relative;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  white-space: nowrap;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .col-b ul.icons li:nth-child(2) svg {
+  transform: translateY(0%);
+}
+
+footer .col-b ul.icons li:nth-child(3) svg {
+  transform: translateY(0%);
+}
+
+footer .col-b ul.icons li:nth-child(4) svg {
+  transform: translateY(-40%);
+}
+
 
   /* footer .col-b li{
     margin-bottom: 2rem;
